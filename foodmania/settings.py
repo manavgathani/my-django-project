@@ -79,9 +79,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'fruit_db',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
+        'USER': 'manavgathani96',
+        'PASSWORD': 'manav@96',
+        'HOST': 'manavgathani96.mysql.pythonanywhere-services.com',
         'PORT': '3306',
     }
 }
