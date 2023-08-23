@@ -1,0 +1,59 @@
+{% extends "seller_header.html" %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						
+						<h1>My Products</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- end hero area -->
+	<!-- features list section -->
+
+	<!-- end features list section -->
+
+	<!-- product section -->
+
+		<div class="container">
+			
+
+			<div class="row">
+            
+				<div class="col-lg-4 col-md-6 text-center">
+					<div class="single-product-item">
+						<div class="product-image">
+							<a href="single-product.html"><img src="{{product.product_image.url}}" alt="" width="250px" height="250px"></a>
+						</div>
+						<h3>{{product.product_name}}</h3>
+						<p class="product-price"><span>Per Kg</span> {{product.product_price}} </p>
+                        <h3>{{product.product_desc}}</h3>
+						<a href="{% url 'seller_edit_product' pk=product.pk %}" class="cart-btn"></i>Edit</a>
+                        <a href="{% url 'seller_delete_product' pk=product.pk %}" class="cart-btn"></i>Delete</a>
+					</div>
+				</div>
+            
+                </div>
+            </div>
+        
+				
+	<!-- end product section -->
+
+	
+
+	
+	{% endblock %}
+</body>
+</html>
